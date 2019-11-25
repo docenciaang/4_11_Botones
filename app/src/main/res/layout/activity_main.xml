@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dmMargenIzq"
+        android:layout_marginTop="@dimen/dmMargenSuperior"
+        android:layout_marginRight="@dimen/dmMargenIzq"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cbKotlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strKotlin"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strJava"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btElegir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dmMargenIzq"
+            android:padding="@dimen/dmEspacioPadding"
+            android:text="@string/strElegir"
+            android:textSize="@dimen/dmBotonTamannoTexto" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRojoVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dmMargenIzq"
+        android:layout_marginTop="@dimen/dmMargenSuperior"
+        android:layout_marginEnd="@dimen/dmMargenIzq"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgRadioGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbRojo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strRojo" />
+
+            <RadioButton
+                android:id="@+id/rbVerde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strVerde"
+                android:textSize="@dimen/dmBotonTamannoTexto" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dmMargenIzq"
+        android:layout_marginTop="@dimen/dmMargenSuperior"
+        android:layout_marginRight="@dimen/dmMargenIzq"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tbInterruptor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton" />
+
+        <Switch
+            android:id="@+id/swSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strSwitch" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dmMargenSuperior"
+        android:background="@drawable/borde"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strEjemploProgresion" />
+
+        <ProgressBar
+            android:id="@+id/pbProgresion"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btIniciarProgresion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stIniciar" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:src="@drawable/ic_android_black_24dp" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">4_11_Botones</string>
+    <string name="strKotlin">Kotlin</string>
+    <string name="strJava">Java</string>
+    <string name="strElegir">Elegir</string>
+    <string name="strVerde" >Verde </string>
+    <string name="strRojo" >Rojo </string>
+    <string name="strSwitch">Swiitch</string>
+    <string name="stIniciar">Iniciar</string>
+    <string name="strEjemploProgresion">Ejemplo Barra Progresión</string>
+</resources>
